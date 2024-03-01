@@ -1,0 +1,98 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+    font-size: 10px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  nav li{
+      
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    border: brown solid 2px;
+    margin: 10px;
+  }
+  nav a{
+    text-decoration: none;
+    
+    width: 100px;
+    height: auto;
+  }
+  nav ul{
+   
+    list-style-type: none;
+    font-size: large;
+    line-height: 10px;
+    
+  }
+  
+  footer { 
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+  h1{
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 4px;
+  }
+  h2{
+    font-size: 2em;
+    letter-spacing: 1.5px;
+  }
+  p, li{
+    line-height: 1.5;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+  }
+  h2+p{
+    text-indent: 20px;
+  }
+  a:active{
+    color: brown;
+    font-style: italic;
+  }
+  a:hover, a:focus{
+    color: rgb(183, 12, 12);
+    text-decoration: none;
+    outline: none;
+  }
+  a:link{
+    color: brown;
+  }
