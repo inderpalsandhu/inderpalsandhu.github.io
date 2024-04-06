@@ -1,5 +1,5 @@
 // set up canvas
-const ballCount = 25;
+
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
@@ -28,7 +28,7 @@ class Ball {
       this.color = color;
       this.size = size;
    }
-//https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes#drawing_paths
+
    draw() {
       ctx.beginPath();
       ctx.fillStyle = this.color;
@@ -70,14 +70,16 @@ class Ball {
          }
       }
    }
+
 }
 
 const balls = [];
 
-while (balls.length < ballCount) {
+while (balls.length < 25) {
    const size = random(10,20);
    const ball = new Ball(
-      
+      // ball position always drawn at least one ball width
+      // away from the edge of the canvas, to avoid drawing errors
       random(0 + size,width - size),
       random(0 + size,height - size),
       random(-7,7),
