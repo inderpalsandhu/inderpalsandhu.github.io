@@ -1,3 +1,8 @@
+/**
+ * Name :- Inderpal Singh Sandhu
+ * File :- main.js
+ * This is java script file for Assignment 5
+ */
 // functionality for showing/hiding the comments section
 
 const showHideBtn = document.querySelector('.show-hide');
